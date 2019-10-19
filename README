@@ -1,0 +1,11 @@
+To build and install this program run:
+
+
+./autogen.sh --prefix=/home/kon/.local
+
+make install
+
+-----------
+Running the first line above creates the following files:
+
+
