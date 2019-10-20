@@ -1,13 +1,17 @@
 # Exclude this file
-#config.log
-#config.status
-#aclocal.m4
-#.buildconfig
-#configure
-#install-sh
-#Makefile.in 
-#README
+config.log
+config.status
+aclocal.m4
+.buildconfig
+configure
+configure.ac
+install-sh
+Makefile.in 
+Makefile.am
+README
 hello-world.desktop
+hello-world.desktop.in
 autom4te.cache
-#missing
-#.vscode/
+missing
+.vscode/
+autom4te.cache/
