@@ -9,7 +9,7 @@ olddir=`pwd`
 cd "$srcdir"
 
 # This will run autoconf, automake,.etc
-autoreconf --force install
+autoreconf --force --install
 
 echo "run"
 

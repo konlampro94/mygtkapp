@@ -1,2 +1,11 @@
 # Exclude this file
-.desktop.in
+config.log
+config.status
+aclocal.m4
+.buildconfig
+configure
+install-sh
+Makefile.in 
+README
+hello-world.desktop
+autom4te.cache

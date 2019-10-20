@@ -1,7 +1,9 @@
 To build and install this program run:
 
 
-./autogen.sh --prefix=/home/kon/.local
+username=`whoami` | exit 1;
+
+./autogen.sh --prefix=/home/$username/.local
 
 make install
 
@@ -9,3 +11,8 @@ make install
 Running the first line above creates the following files:
 
 
+
+To uninstall
+
+-----------
+make uninstall
