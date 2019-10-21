@@ -8,6 +8,7 @@ configure.ac
 install-sh
 Makefile.in 
 Makefile.am
+Makefile
 README
 hello-world.desktop
 hello-world.desktop.in
