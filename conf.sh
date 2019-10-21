@@ -12,7 +12,7 @@ desk_file=*.desktop
 if [ -f "$desk_file" ] ; then
     echo "$desk_file" exists !!!
     echo "Uninstalling.."
-    make uninstall || exit 1;
+    sudo make uninstall || exit 1;
     rm *.desktop || exit 1;
 
 else
@@ -20,10 +20,12 @@ else
     echo "Running autogen.sh....."
     path=/home/$username/.local
     echo "Path is :" $path
-    . ./autogen.sh --prefix=/home/$username/.local || exit 1;
+    . ./autogen.sh --prefix=$path || exit 1;
     echo "Installing..."
     sudo make install || exit 1;
-    ls -l .
+    #ls -l .
+    echo "Giving permissions to .desktop"
+    sudo chmod +x $path/share/applications/hello-world.desktop || exit 1;
 fi
 
 
