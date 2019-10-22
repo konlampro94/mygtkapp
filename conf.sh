@@ -32,4 +32,4 @@ fi
 
 echo $0 Finished succesfully at `date`!
 
-exit 0
+
