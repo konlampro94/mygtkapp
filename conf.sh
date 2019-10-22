@@ -15,7 +15,7 @@ if [ -f "$desk_file" ] ; then
     sudo make uninstall || exit 1;
     rm *.desktop || exit 1;
 
-elseABOUTABOUT
+else
     echo "$desk_file"  does not exist !!!
     echo "Running autogen.sh....."
     path=/home/$username/.local
