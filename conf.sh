@@ -15,7 +15,7 @@ if [ -f "$desk_file" ] ; then
     sudo make uninstall || exit 1;
     rm *.desktop || exit 1;
 
-else
+elseABOUTABOUT
     echo "$desk_file"  does not exist !!!
     echo "Running autogen.sh....."
     path=/home/$username/.local
@@ -23,7 +23,6 @@ else
     . ./autogen.sh --prefix=$path || exit 1;
     echo "Installing..."
     sudo make install || exit 1;
-    #ls -l .
     echo "Giving permissions to .desktop"
     sudo chmod +x $path/share/applications/hello-world.desktop || exit 1;
 fi
